@@ -1,11 +1,13 @@
 from fileinput import close
-import os.path
+import os
 from pathlib import Path
 import sys
 
+path = str(os.getcwd())
+path+="\Accounts"
 
 def FullPath(file_name:str)->str:
-    path = "C:/Users/Hp/Desktop/PYTHON/Trial folder/"
+    # path = "C:/Users/Hp/Desktop/PYTHON/Trial folder/"
     file_name+=".txt"
     complete = os.path.join(path,file_name)
     return complete
@@ -22,7 +24,7 @@ def FileCheck(file_name:str) ->bool:
         bool: Returns 1 if file exists, else returns 0 if file doesn't exist
     """
     
-    path = "C:/Users/Hp/Desktop/PYTHON/Trial folder/"
+    # path = "C:/Users/Hp/Desktop/PYTHON/Trial folder/"
     file_name+=".txt"
     complete = os.path.join(path,file_name)
     if os.path.isfile(complete):
@@ -45,7 +47,7 @@ def ReadFromFile(file_name:str):
     """
     
     
-    path = "C:/Users/Hp/Desktop/PYTHON/Trial folder/"
+    # path = "C:/Users/Hp/Desktop/PYTHON/Trial folder/"
     file_name+=".txt"
     complete = os.path.join(path,file_name)
 
