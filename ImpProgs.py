@@ -4,7 +4,7 @@ from pathlib import Path
 import sys
 
 path = str(os.getcwd())
-path+="\Accounts"
+path+="\Python-Bank-Project\Accounts"
 
 def FullPath(file_name:str)->str:
     # path = "C:/Users/Hp/Desktop/PYTHON/Trial folder/"
